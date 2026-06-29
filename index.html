@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="body">
+    <div class="container">
+        <h1 class="title">Github Profile Finder</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input
+                type="text"
+                placeholder="Enter the Github User Name...."
+                id="searchInput"
+                class="search-input"
+            />
+
+            <button class="search-btn" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <!-- Skeleton Body Card -->
+        <div class="skeleton-card" id="skeleton">
+            <div class="avatar"></div>
+
+            <div class="text-group">
+                <div class="line line-lg"></div>
+                <div class="line line-sm"></div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="pill large"></div>
+                    <div class="pill small"></div>
+                </div>
+
+                <div class="stat">
+                    <div class="pill large"></div>
+                    <div class="pill small"></div>
+                </div>
+
+                <div class="stat">
+                    <div class="pill large"></div>
+                    <div class="pill small"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Container -->
+        <div id="profileContainer"></div>
+    </div>
+
+    <script src="core.js"></script>
+    <script src="search.js"></script>
+    <script src="profile.js"></script>
+    <script src="sort.js"></script>
+</body>
+</html>
