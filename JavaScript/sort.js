@@ -1,6 +1,7 @@
 // sort.js
-// Owns sorting the repo list (by stars / name / last updated) and
+// Owns sorting the repo list (parameters: by stars / name / last updated) and
 // re-rendering it. Also bootstraps the app once every piece is loaded.
+
 
 GitHubProfileFinder.prototype.sortRepos = function (sortBy) {
     const sorted = [...this.repos];
